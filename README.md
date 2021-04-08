@@ -10,6 +10,3 @@
 1. Вначале следует запустить [`Docker`-контейнер](https://github.com/Mortiferus/SQL1.0/tree/master/Docker) с базой данных через [`docker-compose`](https://docs.docker.com/compose/#automated-testing-environments): `docker-compose up -d`.
 2. Затем можно [задействовать](https://github.com/Mortiferus/SQL1.0/blob/master/java%20-jar.txt) специальную сборку [`app-deadline.jar`](https://github.com/Mortiferus/SQL1.0/blob/master/artifacts/app-deadline.jar): `java -jar artifacts/app-deadline.jar -P:jdbc.url=jdbc:mysql://localhost:3306/deadline -P:jdbc.user=mrtotalsecurity -P:jdbc.password=CzmGtmRjc3cLGV7KXza294520qCMYXuF`.
 3. Для перезапуска `SUT` следует остановить `jar`-приложение с помощью [`Ctrl+C`](https://en.wikipedia.org/wiki/Control-C), а затем снова запустить.
-
-[![Build status](https://ci.appveyor.com/api/projects/status/e4yovfd6xngnhd3k?svg=true)](https://ci.appveyor.com/project/Mortiferus/sql1-0)
-
