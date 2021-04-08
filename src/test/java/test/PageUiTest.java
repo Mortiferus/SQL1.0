@@ -31,14 +31,4 @@ public class PageUiTest {
     void shouldLogIn() {
         val verificationPage = new LoginPage().validLogin(getAuthInfo());
         verificationPage.validVerify(getCode());
-    }
-
-    @Test
-    @Disabled
-    void shouldBeBlocked() {
-        LoginPage page = new LoginPage();
-        page.login(getAnotherAuthInfo());
-        page.login(getAnotherAuthInfo());
-        page.blockingLogin(getAnotherAuthInfo());
-    }
-}
+    
